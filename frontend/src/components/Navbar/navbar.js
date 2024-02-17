@@ -9,6 +9,7 @@ import "./navbar.css";
 
 export default function Navbar() {
   const {isAuthenticatedDoctor,isAuthenticatedNurse,isAuthenticatedLab,isAuthenticatedApollo,isAuthenticatedMedical, isAuthenticatedReception , isAuthenticated , setIsAuthenticated , loading , setLoading} =  useContext(Context);
+  const [isVisible,setIsVisible] = useState(true);
 
   console.log("isAuthenticatedReception : ",isAuthenticatedReception);
   console.log("isAuthenticated : " , isAuthenticated);
@@ -38,16 +39,18 @@ export default function Navbar() {
 
 
 
-  const [isVisible,setIsVisible]=useState(true);
-    const handleProfileLogo = () => {
-      if (!isVisible) {
-        setTimeout(() => {
-          setIsVisible(!isVisible);
-        }, 100);
-      } else {
+  
+
+  const handleProfileLogo = () => {
+    if (!isVisible) {
+      setTimeout(() => {
         setIsVisible(!isVisible);
-      }
-    };
+      }, 100);
+    } else {
+      setIsVisible(!isVisible);
+    }
+  };
+
 
   return (
     <>

@@ -1,40 +1,7 @@
-/* LoginAs.css */
-
-.btns {
-  /* text-align: center; */
-  margin-left: 4%;
-}
-.heading{
-  text-align: center;
+.mybtn {
+  transition: transform 1s ease;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn h2 {
-  margin: 0;
-}
-
-.btn.selected {
-  background-color: #007bff !important; /* Blue color for selected button */
-  color: #fff; /* White text color for selected button */
-
- 
-}
-
-/* Optional: Add hover effect */
-.btn:hover {
-  background-color:white; /* Light gray background on hover */
-  color: black !important ;
+.mybtn:hover {
+  transform: scale(1.1);
 }

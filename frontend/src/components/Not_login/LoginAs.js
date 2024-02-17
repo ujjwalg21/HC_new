@@ -13,43 +13,73 @@ const LoginAs = () => {
   return (
     <>
     <Navbar/>
-      <h1 className='heading'>Login</h1>
-    <div className='btns'>
+    <div className='reg'>
+
+
+    <h2 style={{textAlign:'center',color:'white', fontFamily: 'Helvetica Neue'}}>Login As</h2>
+    <div className='row my-2'>
+      <div style={{width:'10%'}} ></div>
+      <div className='card mybtn'  style={{width:'35%',background:'rgba(238, 238, 238, 0.3)'}}>
       <Link to="/login">
-        <button className={`btn ${selectedUser === 'patient' ? 'selected' : ''}`} onClick={() => handleUserSelection('patient')}>
-          <h2>Patient</h2>
+        <button className={`btn ${selectedUser === 'patient' ? 'selected' : ''}`} style={{border:'none'}} onClick={() => handleUserSelection('patient')}>
+          <h2 style={{fontFamily: 'Helvetica Neue'}}>Patient</h2>
         </button>
-      </Link><br />
+      </Link>
+      </div>
+      <div style={{width:'10%'}}></div>
+      <div className='card mybtn' style={{width:'35%',background:'rgba(238, 238, 238, 0.3)'}}>
       <Link to="/doctorlogin">
-        <button className={`btn ${selectedUser === 'doctor' ? 'selected' : ''}`} onClick={() => handleUserSelection('doctor')}>
-          <h2>Doctor</h2>
+        <button className={`btn ${selectedUser === 'doctor' ? 'selected' : ''}`} style={{border:'none'}} onClick={() => handleUserSelection('doctor')}>
+        <h2 style={{fontFamily: 'Helvetica Neue'}}>Doctor</h2>
         </button>
-      </Link><br />
+      </Link>
+      </div>
+      <div style={{width:'10%'}}></div>
+    </div>
+    <div className='row my-2'>
+      <div style={{width:'10%'}}></div>
+      <div className='card mybtn' style={{width:'35%',background:'rgba(238, 238, 238, 0.3)'}}>
       <Link to="/receptionlogin">
-        <button className={`btn ${selectedUser === 'reception' ? 'selected' : ''}`} onClick={() => handleUserSelection('reception')}>
-          <h2>Reception</h2>
+        <button className={`btn ${selectedUser === 'reception' ? 'selected' : ''}`} style={{border:'none'}} onClick={() => handleUserSelection('reception')}>
+        <h2 style={{fontFamily: 'Helvetica Neue'}}>Reception</h2>
         </button>
-      </Link><br />
+      </Link>
+      </div>
+      <div style={{width:'10%'}}></div>
+      <div className='card mybtn' style={{width:'35%',background:'rgba(238, 238, 238, 0.3)'}}>
       <Link to="/nurselogin">
-        <button className={`btn ${selectedUser === 'nurse' ? 'selected' : ''}`} onClick={() => handleUserSelection('nurse')}>
-          <h2>Nurse</h2>
+        <button className={`btn ${selectedUser === 'nurse' ? 'selected' : ''}`} style={{border:'none'}} onClick={() => handleUserSelection('nurse')}>
+        <h2 style={{fontFamily: 'Helvetica Neue'}}>Nurse</h2>
         </button>
-      </Link><br />
+      </Link>
+      </div>
+      <div style={{width:'10%'}}></div>
+    </div>
+    <div className='row my-2'>
+       <div style={{width:'3%'}} ></div>
+      <div className='card mybtn' style={{width:'30%' ,background:'rgba(238, 238, 238, 0.3)'}}>
       <Link to="/medicallogin">
-        <button className={`btn ${selectedUser === 'medical' ? 'selected' : ''}`} onClick={() => handleUserSelection('medical')}>
-          <h2>Medical</h2>
+        <button className={`btn ${selectedUser === 'medical' ? 'selected' : ''}`} style={{border:'none'}} onClick={() => handleUserSelection('medical')}>
+        <h2 style={{fontFamily: 'Helvetica Neue'}}>Medical</h2>
         </button>
-      </Link><br />
+      </Link>
+      </div>
+      <div className='card mybtn' style={{width:'30%' ,background:'rgba(238, 238, 238, 0.3)'}}>
       <Link to="/apollologin">
-        <button className={`btn ${selectedUser === 'apollo' ? 'selected' : ''}`} onClick={() => handleUserSelection('apollo')}>
-          <h2>Apollo</h2>
+        <button className={`btn ${selectedUser === 'apollo' ? 'selected' : ''}`} style={{border:'none'}} onClick={() => handleUserSelection('apollo')}>
+        <h2 style={{fontFamily: 'Helvetica Neue'}}>Apollo</h2>
         </button>
-      </Link><br />
+      </Link>
+      </div>
+      <div className='card mybtn' style={{width:'30%' ,background:'rgba(238, 238, 238, 0.3)'}}>
       <Link to="/lablogin">
-        <button className={`btn ${selectedUser === 'lab' ? 'selected' : ''}`} onClick={() => handleUserSelection('lab')}>
-          <h2>Lab</h2>
+        <button className={`btn ${selectedUser === 'lab' ? 'selected' : ''}`}style={{border:'none'}} onClick={() => handleUserSelection('lab')}>
+        <h2 style={{fontFamily: 'Helvetica Neue'}}>Lab</h2>
         </button>
-      </Link><br />
+      </Link>
+      </div>
+      <div style={{width:'3%'}}></div>
+    </div>
     </div>
     </>
   );

@@ -75,7 +75,7 @@ export default function Login() {
           <FontAwesomeIcon icon={faHashtag} />&nbsp;&nbsp;<input type="string" name="pfnumber" onChange={(e)=>{setPfnumber(e.target.value)} } placeholder='PF number' style={{fontFamily: 'Helvetica Neue'}} spellcheck="false" /><br />
         </div>
         <div className='text-center my-2'>
-          <FontAwesomeIcon icon={faLock} />&nbsp;&nbsp;<input type="text" name="password" onChange={(e)=>{setPassword(e.target.value)} } placeholder='Password' style={{fontFamily: 'Helvetica Neue'}} spellcheck="false" /><br />
+          <FontAwesomeIcon icon={faLock} />&nbsp;&nbsp;<input type="password" name="password" onChange={(e)=>{setPassword(e.target.value)} } placeholder='Password' style={{fontFamily: 'Helvetica Neue'}} spellcheck="false" /><br />
         </div>
         <div className='text-center my-2'>
           <button disabled={loading} id="click"  type='submit' style={{border:'none',fontFamily: 'Helvetica Neue' }} >Sign In</button> 

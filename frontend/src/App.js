@@ -195,24 +195,24 @@ function App() {
 
 
   
-  axios.get("http://localhost:4000/api/v1/users/receptionHome",{
-    withCredentials:true,
-  })
-  .then(res=>{
-    setUser(res.data.user);
-    console.log(res.data.user);
-    // console.log(user)
-    setIsAuthenticatedReception(true);
-    // setIsAuthenticated(false);
-    setLoading(false);
+  // axios.get("http://localhost:4000/api/v1/users/receptionHome",{
+  //   withCredentials:true,
+  // })
+  // .then(res=>{
+  //   setUser(res.data.user);
+  //   console.log(res.data.user);
+  //   // console.log(user)
+  //   setIsAuthenticatedReception(true);
+  //   // setIsAuthenticated(false);
+  //   setLoading(false);
 
-  })
-  .catch((error)=>{
-    console.log(error.response.data.message);
-    setUser({});
-    setIsAuthenticatedReception(false);
-    setLoading(false);
-  })
+  // })
+  // .catch((error)=>{
+  //   console.log(error.response.data.message);
+  //   setUser({});
+  //   setIsAuthenticatedReception(false);
+  //   setLoading(false);
+  // })
 /////////////////
 
 
@@ -289,6 +289,7 @@ function App() {
 
     <Route path="/apollologin" element= {<Apollologin/>}/>;
    </Routes> 
+   <Toaster/>
    </>
    
   );
